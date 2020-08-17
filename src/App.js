@@ -3,19 +3,18 @@ import './App.css';
 import WisdomButton from './components/wisdomButton.js';
 import quotesData from './data/quotes.json';
 import {shuffleArray} from './util/utils.js'
+import {processData} from "./util/processData";
 
 
 function App() {
-   const [quotes, setQuotes] = useState({});
+   const [quoteArr, setQuoteArr] = useState([]);
    const [loading, setLoading] = useState(true);
-   const [quoteIndexes, setQuoteIndex] = useState(0);
 
 
     useEffect(()=> {
-       setQuotes(quotesData);
-       const tstArr = [1 , 3, 4, 5];
+       setQuoteArr(processData());
+       const tstArr = [1 ,3 , 5];
        console.log(shuffleArray(tstArr));
-
        setLoading(false);
        console.log(quotesData)
    },[]);
@@ -24,7 +23,7 @@ function App() {
     <div className="App">
         <div className="background">
             <p>
-                { !loading && quotes.Set1[1] }
+                { !loading && quoteArr[0] }
             </p>
             <WisdomButton str={'Click For a Quote!'}/>
         </div>
