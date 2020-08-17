@@ -5,8 +5,7 @@ export const processData = () => {
     let arr = [];
     for (const key of Object.keys(quotesData)) {
         let arrTemp = shuffleArray(quotesData[key])
-        arr.push(arrTemp);
+        arr = arr.concat(arrTemp);
     }
-    console.log(arr);
     return arr;
 };
