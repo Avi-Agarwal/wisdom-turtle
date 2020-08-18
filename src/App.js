@@ -21,10 +21,10 @@ function App() {
         <div className="background">
             <div className="textBoundary">
                 <p className="text2">
-                    { !loading && '\"' + quoteArr[quoteIndex] + '\"' }
+                    { !loading && quoteArr[quoteIndex].length === 0 ? quoteArr[quoteIndex] : '"' + quoteArr[quoteIndex] + '"' }
                 </p>
             </div>
-            <WisdomButton str={'Click For A Quote!'} onPress={()=>
+            <WisdomButton str={'Click For Quotes!'} onPress={()=>
             {
                 if(quoteIndex === (quoteArr.length - 1) )
                     quoteIndex = 0;

@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .pageDiv{
@@ -60,7 +60,7 @@
 
 .text2{
   font-weight: 500;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
   text-align: center;
   font-family: 'Bellefair', serif;
@@ -75,7 +75,8 @@
   border-left:1em solid transparent;
   border-right:1em solid transparent;
   text-overflow: ellipsis;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
+  padding-top: 12%;
 }
 
 #btn {

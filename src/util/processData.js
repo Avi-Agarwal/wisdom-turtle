@@ -4,8 +4,8 @@ import {shuffleArray} from './utils.js'
 export const processData = () => {
     let arr = [];
     for (const key of Object.keys(quotesData)) {
-        let arrTemp = shuffleArray(quotesData[key])
-        arr = arr.concat(arrTemp);
+        arr = arr.concat(shuffleArray(quotesData[key]));
     }
+    arr.unshift("");
     return arr;
 };
