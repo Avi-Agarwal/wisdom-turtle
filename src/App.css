@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,400italic,700italic,900italic);
+
 .App {
   text-align: center;
 }
@@ -25,6 +27,12 @@
   justify-content: center;
 }
 
+.pageDiv{
+  display: flex;
+  flex-direction: column;
+  top: 0;
+}
+
 .background1 {
   background-image: url("https://images.unsplash.com/photo-1589879183601-8ff3572a4e5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=944&q=80");
   height: 100vh;
@@ -39,6 +47,35 @@
   background-color: transparent;
   border: 2px solid white;
 
+}
+
+.text1{
+  color: #fdf9fd;
+  font: 40px/1.25 'Raleway', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: #0f1923;
+  border: #0f1923;
+}
+
+.text2{
+  font-weight: 500;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  font-family: 'Bellefair', serif;
+}
+
+.textBoundary{
+  wrap-option: wrap;
+  top: -10%;
+  width: 70%;
+  height: 15%;
+  /*border: 3px solid blue;*/
+  border-left:1em solid transparent;
+  border-right:1em solid transparent;
+  text-overflow: ellipsis;
+  padding-bottom: 100px;
 }
 
 #btn {
