@@ -60,7 +60,7 @@
 
 .text2{
   font-weight: 500;
-  font-size: 50px;
+  font-size: 3vw;
   color: white;
   text-align: center;
   font-family: 'Bellefair', serif;
@@ -75,8 +75,8 @@
   border-left:1em solid transparent;
   border-right:1em solid transparent;
   text-overflow: ellipsis;
-  padding-bottom: 80px;
-  padding-top: 12%;
+  padding-bottom: 95px;
+  padding-top: 14%;
 }
 
 #btn {
