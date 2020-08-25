@@ -68,13 +68,13 @@
 
 .textBoundary{
   wrap-option: wrap;
-  top: -10%;
   width: 90%;
   height: 15%;
+  place-content: center;
   /*border: 3px solid blue;*/
   border-left:1em solid transparent;
   border-right:1em solid transparent;
-  text-overflow: ellipsis;
+  overflow: scroll;
   padding-bottom: 95px;
   padding-top: 14%;
 }
