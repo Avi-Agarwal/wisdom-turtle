@@ -24,6 +24,7 @@ function App() {
                     { !loading && quoteArr[quoteIndex].length === 0 ? quoteArr[quoteIndex] : '"' + quoteArr[quoteIndex] + '"' }
                 </p>
             </div>
+            <div className="extraBoundary"/>
             <WisdomButton str={'Click For Quotes!'} onPress={()=>
             {
                 if(quoteIndex === (quoteArr.length - 1) )
