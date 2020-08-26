@@ -19,6 +19,7 @@ function App() {
   return (
     <div className="App">
         <div className="background">
+            <div className="extraBoundary"/>
             <div className="textBoundary">
                 <p className="text2">
                     { !loading && quoteArr[quoteIndex].length === 0 ? quoteArr[quoteIndex] : '"' + quoteArr[quoteIndex] + '"' }
