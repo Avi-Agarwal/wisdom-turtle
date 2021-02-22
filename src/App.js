@@ -21,7 +21,7 @@ function App() {
     <div className="App">
         <div className="background">
             <div className="extraBoundary"/>
-            <div className="textBoundary" style={{ minHeight: '25%', paddingBottom: '10%' }}>
+            <div className="textBoundary" >
                 <p className="text2" >
                     { !loading && quoteArr[quoteIndex].length === 0 ? quoteArr[quoteIndex] : '"' + quoteArr[quoteIndex] + '"' }
                 </p>

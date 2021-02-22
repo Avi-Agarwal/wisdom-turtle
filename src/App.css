@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
 }
 
 .pageDiv{
@@ -60,21 +60,21 @@
 }
 
 .textBoundary{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 30%;
+  max-width: 80%;
   wrap-option: wrap;
-  width: 90%;
-  min-height: 15%;
-  place-content: center;
   /*border: 3px solid blue;*/
   border-left:1em solid transparent;
   border-right:1em solid transparent;
-  padding-bottom: 5%;
-  padding-top: 14%;
 }
 
 .extraBoundary{
   wrap-option: wrap;
-  width: 90%;
-  height: 5%;
+  height: 0;
   /*border: 3px solid blue;*/
   border-left:1em solid transparent;
   border-right:1em solid transparent;
