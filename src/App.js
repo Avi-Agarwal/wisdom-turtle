@@ -10,6 +10,7 @@ function App() {
    let [quoteIndex, setQuoteIndex] = useState(0);
    const [loading, setLoading] = useState(true);
 
+   // div with min height
 
     useEffect(()=> {
        setQuoteArr(processData());
@@ -20,12 +21,11 @@ function App() {
     <div className="App">
         <div className="background">
             <div className="extraBoundary"/>
-            <div className="textBoundary">
-                <p className="text2">
+            <div className="textBoundary" style={{ minHeight: '25%', paddingBottom: '10%' }}>
+                <p className="text2" >
                     { !loading && quoteArr[quoteIndex].length === 0 ? quoteArr[quoteIndex] : '"' + quoteArr[quoteIndex] + '"' }
                 </p>
             </div>
-            <div className="extraBoundary"/>
             <WisdomButton str={'Click For Quotes!'} onPress={()=>
             {
                 if(quoteIndex === (quoteArr.length - 1) )
